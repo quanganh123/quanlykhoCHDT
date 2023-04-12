@@ -33,7 +33,7 @@
                     </li>
                     <li class="col-sm-7"></li>
                     <li class="nav-item">
-                        <a class="btn btn-outline-danger" href="/code/index.php">Disabled</a>
+                        <a class="btn btn-outline-danger" onclick="return confirm('Bạn chắc chắn muốn thoát!');" href="/code/index.php">Disabled</a>
                     </li>
                 </ul>
             </div>
@@ -65,7 +65,7 @@
                                 <td><?php echo $Ios["TrangThai"] ?></td>
                                 <td><?php echo $Ios["SoLuong"] ?></td>
                                 <td><a class="btn btn-outline-success" href="/code/QLkhoCHDT1/index.php?action=update&Id=<?php echo $Ios["Id"] ?>">Sửa</a></td>
-                                <td><a class="btn btn-outline-info" href="/code/QLkhoCHDT1/index.php?action=delete&Id=<?php echo $Ios["Id"] ?>">Xóa</a></td>
+                                <td><a class="btn btn-outline-info" onclick="return confirm('Bạn có muốn xóa dữ liệu không!');" href="/code/QLkhoCHDT1/index.php?action=delete&Id=<?php echo $Ios["Id"] ?>">Xóa</a></td>
                             </tr>
                         <?php } ?>
                     </tbody>
