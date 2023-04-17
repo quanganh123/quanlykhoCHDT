@@ -12,7 +12,7 @@
 <body>
     <div class="row">
         <div class="titledangnhap col-sm-6">
-            <h1 class="pt-5 my-5">Quản Lý Kho Cửa Hàng Điện Thoại</h1>
+            <h1 class="pt-5 my-5">Quản Lý Kho Cửa Hàng Điện Thoại 1111</h1>
         </div>
         <div class="fromdangnhap pt-5 my-5">
             <form action="/code/QLkhoCHDT/Treckdangnhap.php" class="was-validated" method="post">
