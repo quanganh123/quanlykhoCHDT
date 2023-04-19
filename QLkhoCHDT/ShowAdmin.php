@@ -11,69 +11,82 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <title>Quản Lý Kho Cửa Hàng Điện Thoại</title>
 </head>
-
 <body>
     <div class="row">
-        <div class="col-sm-2 text-center pt-5">
-            <h4 class="col-sm text-danger">Quản Lý Kho Cửa Hàng Điện Thoại</h4>
-        </div>
-        <div class="col-sm-10">
+        <div class="col-sm-12">
             <div class="menu">
                 <ul class="nav nav-pills">
+                    <div>
+                        <input type="checkbox" id="ham-menu">
+                        <label for="ham-menu">
+                            <div class="hide-des">
+                                <span class="menu-line"></span>
+                                <span class="menu-line"></span>
+                                <span class="menu-line"></span>
+                                <span class="menu-line"></span>
+                                <span class="menu-line"></span>
+                                <span class="menu-line"></span>
+                            </div>
+                        </label>
+                        <div class="full-page-green"></div>
+                        <div class="ham-menu">
+                            <ul class="centre-text bold-text">
+                                <li><a href="http://localhost/code/QLkhoCHDT">Quản Lý Admin</a></li>
+                                <li><a href="http://localhost/code/QLkhoCHDT1">Quản Điện Thoại Ios</a></li>
+                                <li><a href="http://localhost/code/QLkhoCHDT2">Quản Lý Điện Thoại Android</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <li class="col"></li>
                     <li class="nav-item">
                         <a class="nav-link text-danger" href="#">Quản Lý Kho Cửa Hàng Điện Thoại</a>
                     </li>
-                    <li class="nav-item dropdown col-sm-1">
-                        <a class="dropdown-toggle text-secondary btn btn-outline-secondary" data-toggle="dropdown" href="">Menu</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="http://localhost/code/QLkhoCHDT">Quản Lý Admin</a>
-                            <a class="dropdown-item" href="http://localhost/code/QLkhoCHDT1">Quản Điện Thoại Ios</a>
-                            <a class="dropdown-item" href="http://localhost/code/QLkhoCHDT2">Quản Lý Điện Thoại Android</a>
-                        </div>
-                    </li>
-                    <li class="col-sm-7"></li>
-                    <li class="nav-item">
+                    <li class="col-sm-4"></li>
+                    <li class="nav-item nav-link">
                         <a class="btn btn-outline-danger" onclick="return confirm('Bạn chắc chắn muốn thoát!');" href="/code/index.php">Disabled</a>
                     </li>
                 </ul>
             </div>
+        </div>
+        <div class="color_left col-sm-1 text-center text-danger"></div>
+        <div class="container">
             <div class="text-center text-danger pt-5 my-4">
                 <h4>Quản Lý Kho Cửa Hàng Điện Thoại</h4>
             </div>
-            <div class="container">
-                <div class="input-group mb-3 col-sm-3">
-                    <input type="text" class="form-control" id="myInput" placeholder="Search">
-                </div>
-                <table class="table table-striped table-hover table-sm text-center">
-                    <thead>
-                        <tr>
-                            <th>Id</th>
-                            <th>Họ và Tên</th>
-                            <th>Mã Admin</th>
-                            <th>User_name</th>
-                            <th>Password</th>
-                            <th></th>
-                            <th><a class="btn btn-outline-success" href="FromAddmewAdmin.php">Thêm mới</a></th>
-                        </tr>
-                    </thead>
-                    <tbody class="myTable">
-                        <?php foreach ($ListAdmin as $Admin) { ?>
-                            <tr>
-                                <td><?php echo $Admin["Id"] ?></td>
-                                <td><?php echo $Admin["HoVaTen"] ?></td>
-                                <td><?php echo $Admin["MaAdmin"] ?></td>
-                                <td><?php echo $Admin["User_name"] ?></td>
-                                <td><?php echo $Admin["Password"] ?></td>
-                                <td><a class="btn btn-outline-success" href="/code/QLkhoCHDT/index.php?action=update&Id=<?php echo $Admin["Id"] ?>">Sửa</a></td>
-                                <td><a class="btn btn-outline-info" onclick="return confirm('Bạn có muốn xóa dữ liệu không!');" href="/code/QLkhoCHDT/index.php?action=delete&Id=<?php echo $Admin["Id"] ?> ">Xóa</a></td>
-                            </tr>
-                        <?php } ?>
-                    </tbody>
-                </table>
-                <?php
-                include'./sotrang.php';
-                ?>
+            <div class="input-group mb-3 col-sm-3">
+                <input type="text" class="form-control" id="myInput" placeholder="Search">
             </div>
+            <table class="table table-striped table-hover table-sm text-center">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Họ và Tên</th>
+                        <th>Mã Admin</th>
+                        <th>User_name</th>
+                        <th>Password</th>
+                        <th></th>
+                        <th><a class="btn btn-outline-success" href="FromAddmewAdmin.php">Thêm mới</a></th>
+                    </tr>
+                </thead>
+                <tbody class="myTable">
+                    <?php foreach ($ListAdmin as $Admin) { ?>
+                        <tr>
+                            <td><?php echo $Admin["Id"] ?></td>
+                            <td><?php echo $Admin["HoVaTen"] ?></td>
+                            <td><?php echo $Admin["MaAdmin"] ?></td>
+                            <td><?php echo $Admin["User_name"] ?></td>
+                            <td><?php echo $Admin["Password"] ?></td>
+                            <td><a class="btn btn-outline-success" href="/code/QLkhoCHDT/index.php?action=update&Id=<?php echo $Admin["Id"] ?>">Sửa</a></td>
+                            <td><a class="btn btn-outline-info" onclick="return confirm('Bạn có muốn xóa dữ liệu không!');" href="/code/QLkhoCHDT/index.php?action=delete&Id=<?php echo $Admin["Id"] ?> ">Xóa</a></td>
+                        </tr>
+                    <?php } ?>
+                </tbody>
+            </table>
+            <?php
+            include './sotrang.php';
+            ?>
+        </div>
+        <div class="color_right col-sm-1 text-center text-danger">
         </div>
     </div>
     <script>
@@ -87,5 +100,4 @@
         });
     </script>
 </body>
-
 </html>
