@@ -1,48 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="indexmenu.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/bai1/assets/css/bootstrap-4.6.2-dist/bootstrap-4.6.2-dist/css/bootstrap.min.css">
     <title>Quản Lý Kho Cửa Hàng Điện Thoại</title>
 </head>
+
 <body>
-<div class="row">
-        <div class="titledangky col-sm-6">
-            <h1 class="pt-5 my-5">Quản Lý Kho Cửa Hàng Điện Thoại</h1>
-        </div>
-        <div class="fromdangky pt-5 my-5">
-            <form action="/code/QLkhoCHDT/AddnewAdmin.php" method="post">
-                <h3 class="namefrom">Đăng Ký</h3>
-                <div class="form-group">
-                    <label for="HoVaTen">Họ và tên</label>
-                    <input type="text" name="fullname" class="form-control" id="HoVaTen" placeholder="Nhập Họ Và Tên" required>
-                    <div class="invalid-feedback">Vui lòng điền vào trường này.</div>
-                </div>
-                <div class="form-group">
-                    <label for="MaSinhVien">Mã Admin</label>
-                    <input type="text" name="idadmin" class="form-control" id="MaAdmin" placeholder="Nhập Mã Admin" required>
-                    <div class="invalid-feedback">Vui lòng điền vào trường này.</div>
-                </div>
-                <div class="form-group">
-                    <label for="user_name">Tài Khoản:</label>
-                    <input type="text" class="form-control" id="user_name" placeholder="Nhập Tài Khoản" name="user_name" required>
-                    <div class="invalid-feedback">Vui lòng điền vào trường này.</div>
-                </div>
-                <div class="form-group">
-                    <label for="password">Mật Khẩu:</label>
-                    <input type="text" class="form-control" id="password" placeholder="Nhập Mật Khẩu" name="password" required>
-                    <div class="invalid-feedback">Vui lòng điền vào trường này.</div>
-                </div>
-                <button type="submit" class="btn btn-info offset-3 col-6" name="btn-reg">Đăng Ký</button>
-            </form>
-            <br>
-            <form action="code/index.php">
-                <button type="submit" class="btn btn-info offset-3 col-6" >Đăng Nhập</button>
+    <div class="login-page">
+        <div class="form">
+            <form class="login-form" action="/code/AddnewAdmin.php" method="post">
+                <h4>Đăng Ký</h4>
+                <input type="text" id="fullname" name="fullname" placeholder="Họ Và Tên" required>
+                <input type="text" id="idadmin" name="idadmin" placeholder="Mã Admin" required>
+                <input type="text" id="user_name" name="user_name" placeholder="Tài Khoản" required>
+                <input type="password" id="password" name="password" placeholder="Mật Khẩu" required>
+                <button type="submit" name="btn-reg">Đăng Ký</button>
+                <p class="message">Bạn Đã Có Tài Khoản?<a href="/code/index.php"> Đăng Nhập</a></p>
             </form>
         </div>
     </div>
 </body>
+
 </html>
