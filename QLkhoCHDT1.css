@@ -24,7 +24,7 @@
     color: #000000;
 }
 .menu > li:first-child{
-    margin-left: 63%;
+    margin-left: 860px;
     position: relative;
 }
 .menu > li::after{
