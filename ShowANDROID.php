@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width = device-width, initial-scale = 0.1">
-    <link rel="stylesheet" href="QLkhoCHDT.css">
+    <link rel="stylesheet" href="QLkhoCHDT1.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <title>Quản Lý Kho Cửa Hàng Điện Thoại</title>
 </head>
