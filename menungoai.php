@@ -11,7 +11,7 @@
     <div class="logo">
         <img src="https://clipground.com/images/mobile-clipart-vector-9.jpg" width="50px">
         Quản Lý Kho Cửa Hàng Điện Thoại
-        <a class=" btnt btn btn-outline-danger" onclick="return confirm('Bạn chắc chắn muốn thoát!');" href="/code/index.php">Disabled</a></li>
+        <a class=" btnt btn btn-danger" onclick="return confirm('Bạn chắc chắn muốn thoát!');" href="/code/index.php">Disabled</a></li>
         <a class="logogit" href="https://github.com/quanganh123/quanlykhoCHDT/tree/master"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="50px"></a>
     </div>
     <div class="thanhmau"></div>
