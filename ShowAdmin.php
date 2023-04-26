@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width = device-width, initial-scale = 0.1">
-    <link rel="stylesheet" href="QLkhoCHDT1.css">
+    <link rel="stylesheet" href="QLkhoCHDT2.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <title>Quản Lý Kho Cửa Hàng Điện Thoại</title>
 </head>
@@ -13,7 +13,7 @@
     <div class="logo">
         <img src="https://clipground.com/images/mobile-clipart-vector-9.jpg" width="50px">
         Quản Lý Kho Cửa Hàng Điện Thoại
-        <a class=" btnt btn btn-outline-danger" onclick="return confirm('Bạn chắc chắn muốn thoát!');" href="/code/menungoai.php">Menu Ngoài</a></li>
+        <a class=" btnt btn btn-danger" onclick="return confirm('Bạn chắc chắn muốn thoát!');" href="/code/menungoai.php">Menu Ngoài</a></li>
         <a class="logogit" href="https://github.com/quanganh123/quanlykhoCHDT/tree/master"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="50px"></a>
     </div>
     <div class="menu">       
@@ -34,7 +34,7 @@
                     <th>User_name</th>
                     <th>Password</th>
                     <th></th>
-                    <th><a class="btn btn-outline-success" href="FromAddmewAdmin.php">Thêm mới</a></th>
+                    <th><a class="btn btn-info" href="FromAddmewAdmin.php">Thêm mới</a></th>
                 </tr>
             </thead>
             <tbody class="myTable">
@@ -45,8 +45,8 @@
                         <td><?php echo $Admin["MaAdmin"] ?></td>
                         <td><?php echo $Admin["User_name"] ?></td>
                         <td><?php echo $Admin["Password"] ?></td>
-                        <td><a class=" btnxs btn btn-outline-success" href="/code/indexAdmin.php?action=update&Id=<?php echo $Admin["Id"] ?>">Sửa</a></td>
-                        <td><a class=" btnxs btn btn-outline-info" onclick="return confirm('Bạn có muốn xóa dữ liệu không!');" href="/code/indexAdmin.php?action=delete&Id=<?php echo $Admin["Id"] ?> ">Xóa</a></td>
+                        <td><a class=" btnxs btn btn-success" href="/code/indexAdmin.php?action=update&Id=<?php echo $Admin["Id"] ?>">Sửa</a></td>
+                        <td><a class=" btnxs btn btn-danger" onclick="return confirm('Bạn có muốn xóa dữ liệu không!');" href="/code/indexAdmin.php?action=delete&Id=<?php echo $Admin["Id"] ?> ">Xóa</a></td>
                     </tr>
                 <?php } ?>
             </tbody>
