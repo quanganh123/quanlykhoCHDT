@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.menu{
+    padding: 15px 0 15px 0;
+    border-bottom: 3px solid #000;
+    overflow: hidden;
+    flex: 1;
+    display: flex;
+    background-color: rgba(9, 237, 207, 0.5); 
+}
+.menu > li{
+    padding: 0 12px;
+    position: relative;
+}
+.menu > li > a{
+    color: #000000;
+}
+.menu > li:first-child{
+    margin-left: 905px;
+    position: relative;
+}
+.menu > li::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 60%;
+    background: black;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+.menu > li:last-child::after{
+    display: none;
+}
+.logo{
+    border-bottom: 3px solid #000;
+}
+.logo :hover{
+    background-color: rgb(199, 14, 14);
+}
+.logo > img{
+    margin-left: 300px;
+}
+.kengang{
+    border-bottom: 1px solid #000;
+}
+.namefrom{
+    color: #000;
+    text-align: center;
+    margin-top: 100px;
+    padding-bottom: 40px;
+}
+.logogit{
+    margin-left: 240px;
+}
+.btn{ 
+    margin: 15px 10px 15px 10px;
+    border: 1px solid black;
+    border-radius: 15px ;
+    background-color: red;
+    color: rgb(255, 255, 255);
+    padding: 5px 15px;
+}
+.btn{
+    margin-left: 490px;
+}
+.btn2{ 
+    margin: 15px 10px 15px 10px;
+    border: 1px solid black;
+    border-radius: 15px ;
+    background-color: rgb(73, 123, 198);
+    color: rgb(255, 255, 255);
+    padding: 5px 15px;
+}
+.btn2:hover{
+    color: aliceblue;
+    background-color: rgb(9, 79, 126);
+    text-decoration: none;
+}
+.btn3{ 
+    margin: 15px 10px 15px 10px;
+    border: 1px solid black;
+    border-radius: 15px ;
+    background-color: rgb(94, 169, 15);
+    color: rgb(255, 255, 255);
+    padding: 5px 15px;
+}
+.btn3:hover{
+    color: aliceblue;
+    background-color: rgb(59, 108, 7);
+    text-decoration: none;
+}
+.btn4{ 
+    margin: 15px 10px 15px 10px;
+    border: 1px solid black;
+    border-radius: 15px ;
+    background-color: rgb(255, 38, 0);
+    color: rgb(255, 255, 255);
+    padding: 5px 15px;
+}
+.btn4:hover{
+    color: aliceblue;
+    background-color: rgb(121, 10, 10);
+    text-decoration: none;
+}
+.btn :hover{
+    color: aqua;
+    background-color: rgb(199, 14, 14);
+}
+.btntrang{
+    display: block;
+    border: 1px solid black;
+    padding: 5px 10px;
+    text-align: center;
+    color: rgba(5, 5, 5, 0.975);
+    display: inline;
+    border-radius: 5px;
+}
+.btntrang:hover{
+    color: aliceblue;
+    background-color: rgb(142, 140, 140);
+    text-decoration: none;
+}
+.table1{
+    margin-left: 200px;
+    margin-right: 150px;
+}
+.table{
+    text-align: center;
+}
+.hover:hover {background-color: rgb(223, 219, 219);}
+
+
+
