@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width = device-width, initial-scale = 0.1">
-    <link rel="stylesheet" href="menungoai1.css">
+    <link rel="stylesheet" href="menungoai.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <title>Quản Lý Kho Cửa Hàng Điện Thoại</title>
 </head>
@@ -11,7 +11,7 @@
     <div class="logo">
         <img src="https://clipground.com/images/mobile-clipart-vector-9.jpg" width="50px">
         Quản Lý Kho Cửa Hàng Điện Thoại
-        <a class=" btnt btn btn-danger" onclick="return confirm('Bạn chắc chắn muốn thoát!');" href="/code/index.php">Disabled</a></li>
+        <a class="btnthoat" onclick="return confirm('Bạn chắc chắn muốn thoát!');" href="/code/index.php">Disabled</a></li>
         <a class="logogit" href="https://github.com/quanganh123/quanlykhoCHDT/tree/master"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="50px"></a>
     </div>
     <div class="thanhmau"></div>
