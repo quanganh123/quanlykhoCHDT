@@ -22,10 +22,12 @@ body{
     border-radius: 10px;
     background-color: rgb(42, 237, 136);
     padding: 10px 200px;
+    
 }
 .success__ok:hover{
     background-color:rgb(16, 185, 98);
     color: aliceblue;
+    cursor: pointer;
 }
 
 /* Fail */
@@ -42,4 +44,9 @@ body{
 }
 .fail__icon{
     padding: 20px 108px;
+}
+.fail__btn:hover{
+    background-color:rgb(185, 16, 16);
+    color: aliceblue;
+    cursor: pointer;
 }
