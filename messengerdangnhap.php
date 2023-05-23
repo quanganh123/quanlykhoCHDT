@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="messenger.css">
+    <link rel="stylesheet" href="messenger1.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <title>Quản Lý Thư Viện</title>
+    <title>Quản Lý Kho Cửa Hàng Điện Thoại</title>
 </head>
 <body>
-    <form id="from_reg" class="bg-light p-4 my-3" action="/code/index.php" method="post">
-        <h1>Sai Mật Khẩu Hoặc Tài Khoản</h1>
-    <br><input type="submit" class="btn btn-outline-info offset-3 col-6" name="btn-reg" value="Quay Lại Trang Chính">
+    <form id="from_reg" action="/code/index.php" method="post">
+        <div class="success">
+            <h1 class="fail__title">Sai Mật Khẩu Hoăc Tài Khoản!</h1>
+            <img class="fail__icon" src="https://cdn0.iconfinder.com/data/icons/business-finance-11/100/icon-69-1024.png" width="200px">
+            <button class="fail__btn">Ok</button>
+        </div>
     </form>
 </body>
 </html>
